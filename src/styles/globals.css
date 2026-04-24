@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/effect-cards";
+
+
+@theme {
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F5F5F5;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-accent: #DC2626;
+  --color-accent-alt: #16A34A;
+  --color-status-positive: #16A34A;
+  --color-status-negative: #DC2626;
+  --color-status-neutral: #CA8A04;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html.dark {
+  --color-bg-primary: #1A1A1A;
+  --color-bg-secondary: #2A2A2A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D0D0D0;
+  --color-accent: #EF4444;
+  --color-accent-alt: #22C55E;
+  --color-status-positive: #22C55E;
+  --color-status-negative: #EF4444;
+  --color-status-neutral: #EAB308;
+}
+
+/* 🧱 Base Styles */
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-primary-text);
+  font-family: 'Rubik', sans-serif;
+}
