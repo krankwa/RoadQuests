@@ -67,7 +67,7 @@ export default function Navbar() {
       </button>
 
       <div className="hidden lg:block text-right">
-        <Button link="/contact" text="Request Quote" />
+        <Button link="/contact" text="Contact Us" />
       </div>
     </nav>
   );

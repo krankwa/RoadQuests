@@ -15,47 +15,51 @@ import Link from "next/link";
 const fleet = [
   {
     id: 1,
-    icon: faTruck,
-    title: "Closed Van",
+    icon: faTruckMoving,
+    title: "Tractor Head (Prime Mover)",
+    units: 3,
     description:
-      "Fully enclosed cargo bay protecting goods from weather and road dust. Ideal for retail replenishment, dry goods, and sensitive cargo.",
-    capacity: "Up to 4 tons",
-    dimensions: "14 – 16 ft body",
-    bestFor: "Provincial deliveries, retail supply",
-    image: "/images/header-image1.jpg",
+      "6×4 heavy-duty prime movers paired with ISO-standard container chassis. Handles both 20 ft (1×20) and 40 ft (1×40) dry van containers for port-to-door and inter-depot runs across the Philippines.",
+    capacity: "28–30 tons (40 ft) · 20–25 tons (20 ft)",
+    dimensions: "6×4 axle · 10 trailers @ 40 ft, 5 trailers @ 20 ft",
+    bestFor: "Port operations, import/export, nationwide bulk haul",
+    image: "/images/trucks/tractor-head.jpg",
   },
   {
     id: 2,
-    icon: faTruckMoving,
-    title: "Wing Van",
+    icon: faTruck,
+    title: "10-Wheeler Wing Van",
+    units: 2,
     description:
-      "Hydraulic wing-opening design enables fast side-loading and unloading of palletized shipments at manufacturing plants and distribution centers.",
-    capacity: "Up to 12 tons",
-    dimensions: "28 – 32 ft body",
-    bestFor: "Manufacturer-to-distributor runs",
-    image: "/images/projects/project-11.jpg",
+      "Hydraulic wing-opening side panels enable fast pallet loading and unloading at manufacturing plants and distribution hubs. Built for high-volume inter-city and provincial lanes.",
+    capacity: "Up to 10–12 tons",
+    dimensions: "6×2 axle · 32–40 ft body",
+    bestFor: "Manufacturer-to-distributor runs, palletized cargo",
+    image: "/images/projects/wingvan.jpg",
   },
   {
     id: 3,
     icon: faTruckRampBox,
-    title: "Trailer Truck",
+    title: "6-Wheeler Forward (Closed Van)",
+    units: 2,
     description:
-      "Heavy-duty long-haul trailers built for interprovincial and inter-island deliveries across Luzon, Visayas, and Mindanao.",
-    capacity: "Up to 30 tons",
-    dimensions: "40 ft trailer",
-    bestFor: "Nationwide bulk logistics",
-    image: "/images/projects/project-21.jpg",
+      "Cab-over-engine enclosed van for medium-volume city and provincial deliveries. Fully sealed cargo bay protects goods from weather and road dust — ideal for dry goods and retail replenishment.",
+    capacity: "Up to 5–6 tons",
+    dimensions: "4×2 axle · 14–16 ft body",
+    bestFor: "Provincial deliveries, retail supply, dry goods",
+    image: "/images/trucks/closedVans.jpg",
   },
   {
     id: 4,
     icon: faBoxesStacked,
-    title: "Container Hauler",
+    title: "6-Wheeler Dropside",
+    units: 1,
     description:
-      "Port-to-door container hauling with secure chassis mounting. Handles both dry and refrigerated container units.",
-    capacity: "20 ft / 40 ft containers",
-    dimensions: "ISO container-certified",
-    bestFor: "Port operations, import/export",
-    image: "/images/projects/project-31.jpg",
+      "Open flatbed with folding drop sides for flexible loading of oversized, loose, or irregularly shaped cargo. A staple in construction material and agricultural supply chains nationwide.",
+    capacity: "Up to 5–7 tons",
+    dimensions: "4×2 axle · 14–16 ft flatbed",
+    bestFor: "Construction materials, farm produce, general cargo",
+    image: "/images/trucks/dropside.jpg",
   },
 ];
 
@@ -83,14 +87,15 @@ const coverage = [
 export default function FleetPage() {
   return (
     <main className="relative">
-      <section className="flex flex-col md:flex-row justify-between items-center">
-        <h1 className="font-black text-4xl md:text-5xl lg:text-6xl leading-normal text-center md:text-left">
+      <section className="flex flex-col items-center text-center">
+        <h1 className="font-black text-4xl md:text-5xl lg:text-6xl leading-normal">
           Our <span className="text-accent">Fleet</span>
           <br />
           Ready for Every Load
         </h1>
-        <p className="md:w-2/5 text-text-secondary text-lg mt-6 md:mt-0 text-center md:text-left">
-          From small provincial deliveries to full container hauls, our fleet is
+        <p className="max-w-2xl text-text-secondary text-lg mt-6">
+          From small provincial deliveries to full container hauls, our fleet of{" "}
+          <span className="font-semibold text-text-primary">8 units</span> is
           built to handle the logistics demands of modern Philippine businesses.
         </p>
       </section>
@@ -111,6 +116,9 @@ export default function FleetPage() {
                 />
                 <div className="absolute top-4 left-4 flex justify-center items-center size-12 rounded-full bg-accent text-bg-primary shadow-lg">
                   <FontAwesomeIcon icon={truck.icon} className="text-xl" />
+                </div>
+                <div className="absolute top-4 right-4 bg-bg-primary/90 text-text-primary text-xs font-bold px-3 py-1 rounded-full shadow">
+                  {truck.units} {truck.units === 1 ? "Unit" : "Units"}
                 </div>
               </div>
               <div className="p-6">

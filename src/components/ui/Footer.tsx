@@ -63,7 +63,7 @@ export default function Footer() {
                 <a href="/project">Our Fleet</a>
               </li>
               <li>
-                <a href="/contact">Request a Quote</a>
+                <a href="/contact">Contact Us</a>
               </li>
             </ul>
           </div>

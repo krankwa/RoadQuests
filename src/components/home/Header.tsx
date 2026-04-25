@@ -65,10 +65,11 @@ export default function Header() {
       <div className="flex flex-col lg:flex-row justify-between items-stretch gap-6 relative w-full mt-8 md:mt-12">
         <Image
           className="w-full lg:w-3/5 rounded-xl object-cover"
-          src="/images/header-image1.jpg"
+          src="/images/rdqstHeader.gif"
           alt="Roadquest fleet in transit"
           width={500}
           height={300}
+          unoptimized
         />
         <div className="w-full lg:w-2/5 flex flex-col">
           <h2 className="text-text-primary font-extrabold text-3xl xl:text-4xl mb-3 text-center md:text-left">

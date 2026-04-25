@@ -7,7 +7,7 @@ import OurProjects from "@/components/home/Projects"; // Projects section compon
 import dataSlider from "@/data/our-project-data.json"; // JSON data for the projects slider
 import AboutUs from "@/components/home/AboutUs"; // About Us section component
 // import Footer from "@/components/ui/Footer"; // Footer section component
-// import WhyUs from "@/components/shared/WhyUs";
+import WhyUs from "@/components/home/WhyUs";
 import { ParallaxScroll } from "@/components/home/parallax-scroll";
 import clientText from "@/data/client-text.json";
 
@@ -33,7 +33,7 @@ export default function Home() {
         {/* About Us section providing information about the company */}
         <AboutUs />
 
-        {/* <WhyUs /> */}
+        <WhyUs />
         <ParallaxScroll clientsText={clientText} className="" key={0} />
       </main>
     </>

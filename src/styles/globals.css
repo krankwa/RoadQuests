@@ -35,3 +35,20 @@ body {
   color: var(--color-primary-text);
   font-family: 'Rubik', sans-serif;
 }
+
+/* Service Card hover effects */
+.service-card:hover .icon-wrap {
+  background: #16A34A;
+}
+.service-card:hover .icon-wrap .icon-stroke {
+  stroke: #fff;
+}
+.service-card:hover .icon-wrap .icon-fill {
+  fill: #fff;
+}
+.service-card:hover .icon-wrap .icon-bg {
+  fill: #fff;
+}
+.service-card:hover h3 {
+  color: #16A34A;
+}
