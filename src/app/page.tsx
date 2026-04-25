@@ -28,7 +28,7 @@ export default function Home() {
 
         {/* Projects section displaying a slider of projects */}
         {/* Passes the `dataSlider` JSON data as a prop to the `OurProjects` component */}
-        <OurProjects data={dataSlider} />
+        <OurProjects />
 
         {/* About Us section providing information about the company */}
         <AboutUs />
