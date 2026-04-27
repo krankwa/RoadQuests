@@ -12,7 +12,7 @@ export default function ServicesPage() {
       title: "Container Hauling",
       description:
         "Efficient hauling of 20ft and 40ft containers from ports to warehouses or business locations nationwide.",
-      image: "/images/projects/containerhauling.jpg",
+      image: "/images/trucks/containerWlogo.png",
     },
     {
       title: "Closed Van Transport",

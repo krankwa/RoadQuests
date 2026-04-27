@@ -30,7 +30,7 @@ const fleet = [
     units: 2,
     description:
       "Hydraulic wing-opening side panels enable fast pallet loading and unloading at manufacturing plants and distribution hubs.",
-    capacity: "Up to 10–12 tons",
+    capacity: "Up to 12-20 tons",
     dimensions: "6×2 axle · 32–40 ft body",
     bestFor: "Manufacturer-to-distributor runs, palletized cargo",
     image: "/images/projects/wingvan.jpg",
@@ -44,7 +44,7 @@ const fleet = [
     capacity: "Up to 5–6 tons",
     dimensions: "4×2 axle · 14–16 ft body",
     bestFor: "Provincial deliveries, retail supply, dry goods",
-    image: "/images/trucks/closedVans.jpg",
+    image: "/images/trucks/6whlerLogo.png",
   },
   {
     icon: faBoxesStacked,

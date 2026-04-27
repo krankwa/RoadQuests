@@ -92,10 +92,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:roadquesttruckingservices@gmail.com"
+                  href="mailto:sales@roadquest.co"
                   className="break-all"
                 >
-                  roadquesttruckingservices@gmail.com
+                  sales@roadquest.co
                 </a>
               </li>
               <li>

@@ -6,6 +6,7 @@ import {
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import ContactForm from "@/components/contact/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -22,8 +23,8 @@ export default function ContactPage() {
           </p>
         </section>
 
-        {/* Contact Info */}
-        <div className="max-w-xl mx-auto">
+        {/* Contact Info + Form */}
+        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div className="flex flex-col justify-between p-8 rounded-3xl shadow-md space-y-6 border border-text-secondary/20">
             <div>
               <h2 className="text-text-primary text-2xl font-bold mb-3">
@@ -39,10 +40,10 @@ export default function ContactPage() {
                     className="text-accent w-5 h-5"
                   />
                   <a
-                    href="mailto:roadquesttruckingservices@gmail.com"
+                    href="mailto:sales@roadquest.co"
                     className="hover:underline"
                   >
-                    roadquesttruckingservices@gmail.com
+                    sales@roadquest.co
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
@@ -114,6 +115,16 @@ export default function ContactPage() {
                 </span>
               </p>
             </div>
+          </div>
+
+          <div className="p-8 rounded-3xl shadow-md border border-text-secondary/20">
+            <h2 className="text-text-primary text-2xl font-bold mb-3">
+              Send us a Message
+            </h2>
+            <p className="text-text-secondary mb-5">
+              Fill out the form and we&apos;ll reply to your email shortly.
+            </p>
+            <ContactForm />
           </div>
         </div>
       </main>

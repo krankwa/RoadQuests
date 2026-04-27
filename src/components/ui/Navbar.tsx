@@ -63,11 +63,14 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
-        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} className="text-xl" />
+        <FontAwesomeIcon
+          icon={menuOpen ? faTimes : faBars}
+          className="text-xl"
+        />
       </button>
 
       <div className="hidden lg:block text-right">
-        <Button link="/contact" text="Contact Us" />
+        <Button link="/contact" text="Request a Qoute" />
       </div>
     </nav>
   );
