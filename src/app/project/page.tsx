@@ -35,7 +35,7 @@ const fleet = [
     capacity: "Up to 12-20 tons",
     dimensions: "6×2 axle · 32–40 ft body",
     bestFor: "Manufacturer-to-distributor runs, palletized cargo",
-    image: "/images/projects/wingvan.jpg",
+    image: "/images/trucks/containerWlogo.png",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const fleet = [
     capacity: "Up to 5–6 tons",
     dimensions: "4×2 axle · 14–16 ft body",
     bestFor: "Provincial deliveries, retail supply, dry goods",
-    image: "/images/trucks/closedVans.jpg",
+    image: "/images/trucks/6whlerLogo.png",
   },
   {
     id: 4,

@@ -33,7 +33,7 @@ const fleet = [
     capacity: "Up to 12-20 tons",
     dimensions: "6×2 axle · 32–40 ft body",
     bestFor: "Manufacturer-to-distributor runs, palletized cargo",
-    image: "/images/projects/wingvan.jpg",
+    image: "/images/trucks/containerWlogo.png",
   },
   {
     icon: faTruckRampBox,
