@@ -23,7 +23,7 @@ const fleet = [
     capacity: "28–30 tons (40 ft) · 20–25 tons (20 ft)",
     dimensions: "6×4 axle · 10 trailers @ 40 ft, 5 trailers @ 20 ft",
     bestFor: "Port operations, import/export, nationwide bulk haul",
-    image: "/images/trucks/tractor-head.jpg",
+    image: "/images/trucks/containerWlogo.png",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const fleet = [
     capacity: "Up to 12-20 tons",
     dimensions: "6×2 axle · 32–40 ft body",
     bestFor: "Manufacturer-to-distributor runs, palletized cargo",
-    image: "/images/trucks/containerWlogo.png",
+    image: "/images/projects/wingvan.jpg",
   },
   {
     id: 3,
